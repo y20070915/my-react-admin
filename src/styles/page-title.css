@@ -1,0 +1,92 @@
+/**
+ * 页面标题统一样式
+ */
+
+.page-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  padding: 0;
+  background: transparent;
+}
+
+.page-title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #262626;
+  line-height: 1.2;
+}
+
+.page-title-large {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1890ff;
+}
+
+.page-title-medium {
+  font-size: 20px;
+  font-weight: 600;
+  color: #262626;
+}
+
+.page-title-small {
+  font-size: 18px;
+  font-weight: 500;
+  color: #595959;
+}
+
+.page-title-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.page-title-description {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #8c8c8c;
+  line-height: 1.4;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .page-title-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .page-title {
+    font-size: 20px;
+  }
+
+  .page-title-large {
+    font-size: 24px;
+  }
+
+  .page-title-medium {
+    font-size: 18px;
+  }
+
+  .page-title-small {
+    font-size: 16px;
+  }
+
+  .page-title-actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
+
+/* 确保标题不受Tab标签系统影响 */
+.page-title-container * {
+  box-sizing: border-box;
+}
+
+/* 修复可能的z-index问题 */
+.page-title-container {
+  position: relative;
+  z-index: 1;
+}

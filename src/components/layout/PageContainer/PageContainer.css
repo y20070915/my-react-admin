@@ -1,0 +1,102 @@
+/**
+ * 页面容器样式
+ */
+
+.page-container {
+  margin: 0;
+  background: #fff;
+  min-height: calc(100vh - 104px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  position: relative;
+  z-index: 0;
+}
+
+/* 响应式设计 */
+@media (max-width: 1024px) {
+  .page-container {
+    margin: 0 16px;
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-container {
+    margin: 0 8px;
+    padding: 16px !important;
+    border-radius: 8px;
+  }
+}
+
+/* 确保内容不被遮挡 */
+.page-container * {
+  box-sizing: border-box;
+}
+
+/* 页面内容区域 */
+.page-container .ant-card {
+  margin-bottom: 16px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.page-container .ant-card:last-child {
+  margin-bottom: 0;
+}
+
+/* 表格样式优化 */
+.page-container .ant-table-wrapper {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.page-container .ant-table {
+  border-radius: 8px;
+}
+
+.page-container .ant-table-thead > tr > th {
+  background: #fafafa;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+/* 表单样式优化 */
+.page-container .ant-form {
+  background: #fff;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* 按钮组样式 */
+.page-container .ant-btn-group {
+  margin-bottom: 16px;
+}
+
+/* 搜索区域样式 */
+.page-container .ant-input-search {
+  margin-bottom: 16px;
+}
+
+/* 分页样式 */
+.page-container .ant-pagination {
+  margin-top: 16px;
+  text-align: right;
+}
+
+/* 统计卡片样式 */
+.page-container .ant-statistic {
+  text-align: center;
+}
+
+.page-container .ant-statistic-title {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.page-container .ant-statistic-content {
+  color: #262626;
+  font-size: 24px;
+  font-weight: 600;
+}
